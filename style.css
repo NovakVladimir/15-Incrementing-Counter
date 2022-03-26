@@ -9,6 +9,7 @@ body {
     color: #fff;
     font-family: 'Roboto Mono', sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -27,4 +28,10 @@ body {
 .counter {
     font-size: 60px;
     margin-top: 10px;
+}
+
+@media(min-width: 580px) {
+    body {
+        flex-direction: row;
+    }
 }
